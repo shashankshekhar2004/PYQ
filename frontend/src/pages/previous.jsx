@@ -15,9 +15,9 @@ const Previous = () => {
         try {
             // Here you would make an API request to download the PDF based on the entered subject code
             // Replace the API endpoint with your actual endpoint
-            const filename=subjectCode
+            const filename = subjectCode
             filename.toUpperCase();
-            const response = await axios.post("http://localhost:5000/search/search-files", { filename}, {
+            const response = await axios.post("https://pyqapp.onrender.com/search/search-files", { filename }, {
                 responseType: 'blob'
             });
 

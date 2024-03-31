@@ -34,7 +34,7 @@ function UploadForm() {
             formDataWithFile.append('subjectcode', formData.subjectCode);
             formDataWithFile.append('file', file);
 
-            const response = await axios.post("http://localhost:5000/student/upload-files", formDataWithFile);
+            const response = await axios.post("https://pyqapp.onrender.com/student/upload-files", formDataWithFile);
             console.log(response.data.message);
             if (response.data.status === 1) {
                 alert("File uploaded  successfully")
@@ -116,7 +116,7 @@ function UploadForm() {
                     />
                 </Form.Group>
                 <Button variant="primary" type="submit" onClick={handleUpload} disabled={loading}>
-                    {loading ? 'Uploading...' : 'Upload'} 
+                    {loading ? 'Uploading...' : 'Upload'}
                 </Button>
             </Form>
         </div>

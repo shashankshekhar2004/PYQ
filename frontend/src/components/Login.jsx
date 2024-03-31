@@ -12,7 +12,7 @@ const Login = ({ handleLogin }) => {
         e.preventDefault();
         setLoading(true); // Set loading to true when login process starts
         try {
-            const response = await axios.post('http://localhost:5000/login', { email, password });
+            const response = await axios.post('https://pyqapp.onrender.com/login', { email, password });
             if (response.data.status === 1) {
                 handleLogin();
             } else {
