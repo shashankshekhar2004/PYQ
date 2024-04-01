@@ -46,7 +46,7 @@ function UploadForm() {
             }
         } catch (error) {
             console.error('Error uploading file:', error);
-            alert("Try Again after some time")
+            alert("Please Provide Necessary Details")
             window.location.reload(true);
         } finally {
             setLoading(false); // Set loading to false when upload finishes
