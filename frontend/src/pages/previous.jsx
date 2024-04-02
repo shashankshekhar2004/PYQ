@@ -82,7 +82,7 @@ const Previous = () => {
     return (
         <>
             <h1 id="viewMessage"></h1>
-            <div className="d-flex justify-content-center align-items-center vh-100">
+            <div className="d-flex justify-content-center">
                 <Card className="mt-4 p-4" style={{ maxWidth: '600px' }}>
                     <h1 className="mb-4 text-center">Previous Year paper</h1>
                     <Form>
