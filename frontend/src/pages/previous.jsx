@@ -27,7 +27,7 @@
 //         try {
 //             const filename = subjectCode.toUpperCase(); // Convert subject code to uppercase
 //             // Make a POST request to get the PDF file as a blob
-//             const response = await axios.post("http://localhost:5000/search/search-files", { filename }, {
+//             const response = await axios.post("https://pyqapp.onrender.com/search/search-files", { filename }, {
 //                 responseType: 'blob'
 //             });
 
@@ -60,7 +60,7 @@
 //         try {
 //             const filename = subjectCode.toUpperCase(); // Convert subject code to uppercase
 //             // Make a POST request to get the PDF file as a blob
-//             const response = await axios.post("http://localhost:5000/search/search-files", { filename }, {
+//             const response = await axios.post("https://pyqapp.onrender.com/search/search-files", { filename }, {
 //                 responseType: 'blob'
 //             });
 
@@ -158,7 +158,7 @@ const Previous = () => {
         try {
             const filename = subjectCode.toUpperCase();
             const response = await axios.post(
-                "http://localhost:5000/search/search-files",
+                "https://pyqapp.onrender.com/search/search-files",
                 { filename },
                 { responseType: 'blob' }
             );
@@ -190,7 +190,7 @@ const Previous = () => {
         try {
             const filename = subjectCode.toUpperCase();
             const response = await axios.post(
-                "http://localhost:5000/search/search-files",
+                "https://pyqapp.onrender.com/search/search-files",
                 { filename },
                 { responseType: 'blob' }
             );
