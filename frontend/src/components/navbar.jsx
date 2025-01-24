@@ -17,7 +17,7 @@ const NAV = () => {
                     className="text-white w-100 text-center fw-bold fs-4" 
                     style={{ fontFamily: "'Poppins', sans-serif" }}
                 >
-                    Mohit Previous Year Paper App
+                    Prince Previous Year Paper App
                 </Navbar.Brand>
                 <Button
                     onClick={handleAdmin}
