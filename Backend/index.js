@@ -25,7 +25,7 @@ app.use(cors(
 )); // Enable Cross-Origin Resource Sharing
 app.use(express.json()); // Parse incoming JSON requests
 
-connectToDatabase;
+// connectToDatabase;
 
 // Basic route for server status check
 app.get('/', (req, res) => {
