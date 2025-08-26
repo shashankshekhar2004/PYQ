@@ -19,6 +19,13 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 
+app.use(express.static("dist", {
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith(".js")) {
+      res.setHeader("Content-Type", "application/javascript");
+    }
+  }
+}));
 // Middleware setup
 app.use(cors()) // Enable Cross-Origin Resource Sharing
 app.use(express.json()); // Parse incoming JSON requests
