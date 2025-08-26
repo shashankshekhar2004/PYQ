@@ -20,9 +20,7 @@ const port = process.env.PORT || 3000;
 
 
 // Middleware setup
-app.use(cors(
-    { origin: ["https://princepyq.netlify.app","https://ankitpyq.netlify.app","https://mohitpyq.netlify.app", "http://localhost:3000", "http://localhost:5173", "http://localhost:3001", "http://localhost:5173/admin"] }
-)); // Enable Cross-Origin Resource Sharing
+app.use(cors()) // Enable Cross-Origin Resource Sharing
 app.use(express.json()); // Parse incoming JSON requests
 
 // connectToDatabase;
