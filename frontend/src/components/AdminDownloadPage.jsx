@@ -24,7 +24,7 @@ const AdminDownloadPage = () => {
 
     try {
       const response = await axios.post(
-        "https://pyqapp.onrender.com/admindownload/search-files",
+        "https://pyq-banu.onrender.com/admindownload/search-files",
         { filename: formattedFilename },
         {
           responseType: "blob",
@@ -124,7 +124,7 @@ export default AdminDownloadPage;
 //         }
 
 //         try {
-//             const response = await axios.post("https://pyqapp.onrender.com/admindownload/search-files", { filename }, {
+//             const response = await axios.post("https://pyq-banu.onrender.com/admindownload/search-files", { filename }, {
 //                 responseType: 'blob' // Set responseType to 'blob' to receive binary data
 //             });
 

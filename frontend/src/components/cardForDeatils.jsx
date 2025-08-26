@@ -16,7 +16,7 @@ function CardForDetails() {
   async function fetchDetails() {
     try {
       const response = await axios.post(
-        "https://pyqapp.onrender.com/adminverifydownload/"
+        "https://pyq-banu.onrender.com/adminverifydownload/"
       );
       console.log(response.data); // Log the response to verify structure
 
@@ -134,7 +134,7 @@ export default CardForDetails;
 // async function automatically() {
 //     try {
 //         // Sending a POST request
-//         let response = await axios.post('https://pyqapp.onrender.com/adminverifydownload/');
+//         let response = await axios.post('https://pyq-banu.onrender.com/adminverifydownload/');
 
 //         // Accessing the data from the response
 //         const data = response.data;

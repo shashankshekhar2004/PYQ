@@ -26,7 +26,7 @@ const Previous = () => {
     try {
       const filename = subjectCode.toUpperCase();
       const response = await axios.post(
-        "https://pyqapp.onrender.com/search/search-files",
+        "https://pyq-banu.onrender.com/search/search-files",
         { filename },
         { responseType: "blob" }
       );
@@ -58,7 +58,7 @@ const Previous = () => {
     try {
       const filename = subjectCode.toUpperCase();
       const response = await axios.post(
-        "https://pyqapp.onrender.com/search/search-files",
+        "https://pyq-banu.onrender.com/search/search-files",
         { filename },
         { responseType: "blob" }
       );

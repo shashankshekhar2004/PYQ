@@ -13,10 +13,13 @@ const Login = ({ handleLogin }) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post("https://pyqapp.onrender.com/login/", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://pyq-banu.onrender.com/login/",
+        {
+          email,
+          password,
+        }
+      );
       if (response.data.status === 1) {
         handleLogin();
       } else {
