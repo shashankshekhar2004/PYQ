@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 });
 
 
-// Use routers for different functionalities
+
 app.use('/student', StudentUploadRouter); // Handle student-related routes
 app.use('/admindownload', AdminSearchRouter); // Handle admin search/download routes
 app.use('/adminupload', AdminUploadRouter); // Handle admin upload routes
